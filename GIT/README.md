@@ -1,3 +1,12 @@
-git pull                                            : code pull for current branch
-git config --list                                   : list of data
-git config --global http.sslVerify false            : certificate issue
+code pull for current branch
+```javascript
+git pull   
+```
+list of data
+```javascript
+git config --list
+```
+certificate issue
+```javascript
+git config --global http.sslVerify false
+```
