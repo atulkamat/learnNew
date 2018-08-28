@@ -10,7 +10,7 @@ certificate issue
 ```javascript
 git config --global http.sslVerify false
 ```
-Git commit reset
+Git commit error how to reset
 ```javascript
 git reset HEAD~
 ```
