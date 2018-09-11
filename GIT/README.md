@@ -16,5 +16,7 @@ git reset HEAD~
 ```
 
 chekout the branch
-git pull link master
+```javascript
+git pull https://link master
 git push origin master
+```
