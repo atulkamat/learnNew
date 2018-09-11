@@ -14,3 +14,7 @@ Git commit error how to reset
 ```javascript
 git reset HEAD~
 ```
+
+chekout the branch
+git pull link master
+git push origin master
