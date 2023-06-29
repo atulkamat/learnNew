@@ -12,7 +12,8 @@ git config --global http.sslVerify false
 ```
 Git commit error how to reset
 ```javascript
-git reset HEAD~
+git reset --hard HEAD~
+git reset --hard HEAD^
 ```
 
 chekout the branch
