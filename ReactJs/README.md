@@ -1,4 +1,4 @@
-go throught the following urls
+go through the following urls
 |url|desc|
 |:-|-|
 |https://react.dev/learn/tutorial-tic-tac-toe|start to code with this|
