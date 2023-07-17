@@ -59,4 +59,5 @@ let obj= {
 //output is obj={apple:9}
 ```
 14) Methods for objects - "key" in Object => return true if present and for(let key in object){ }=> loops through all the keys
-15) Object.assign(dest, source1,source2) for copy of object without mutation,structuredClone(object) for deep clone
+15) Object.assign(dest, source1,source2) for copy of object without mutation,structuredClone(object) for deep clone (does not clone function inside)
+16) 
