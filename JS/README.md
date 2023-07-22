@@ -61,5 +61,5 @@ let obj= {
 14) Methods for objects - "key" in Object => return true if present and for(let key in object){ }=> loops through all the keys
 15) Object.assign(dest, source1,source2) for copy of object without mutation,structuredClone(object) for deep clone (does not clone function inside)
 16) "?." optional chaining "user?.address?.street?.name" used instead of "(user.address && user.address.street && user.address.street.name)". cannot be used to write into variable
-17) String or symbol as key for object. Symbol("id") creates a unique value. if the return value is missed the data is not retrievable. used for hiding the property values. copy of object will show symbols as well.
-18) 
+17) String or symbol as key for object. Symbol("id") creates a unique value. if the return value is missed the data is not retrievable. used for hiding the property values. copy of object will show symbols as well.Create symbol in registry Symbol.for("id")
+18) 0.1 + 0.2 == 0.3 is false cause the values save in binary and have precision
