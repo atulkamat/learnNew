@@ -65,3 +65,11 @@ let obj= {
 18) 0.1 + 0.2 == 0.3 is false cause the values save in binary and have precision. 4.1 =  Math.floor=>4 Math.ceil=>5
 19) backtick allows multiline and embedded javascript `1 + 2 = ${sum(1,2)}`
 20) "Hello from the other side".at(-1) => "e" , .at(-2)=> "d"  .at(1) => "H"
+21) Array shift(remove) and unshift(add) value from the start of array.pop and push work on the last item in array. "array.at" will work with negative values
+```javascript
+let fruits = ["Apple", "Orange", "Plum"];
+// same as fruits[fruits.length-1]
+alert( fruits.at(-1) ); // Plum
+```
+22) user for of to loop array for(let item of aArray){alert (item);}. if we shorten length manually the array is truncated. best way to clear array is make length=0
+33) arrays are like object but dont use them ike that
