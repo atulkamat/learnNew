@@ -73,4 +73,8 @@ link - https://javascript.info/
     ```
 22. user for of to loop array for(let item of aArray){alert (item);}. if we shorten length manually the array is truncated. best way to clear array is make length=0
 23. arrays are like object but dont use them like that. user.find(function(item,index,array){}) or user.find(item=> item.id==1)
-24. array.sort() sorts as strings by default. the function inside need to return if the number is positive(bigger) or negative(smaller). string comparison use str.localCompare()
+24. array.sort() sorts as strings by default. the function inside need to return if the number is positive(bigger) or negative(smaller). string comparison use str.localCompare(). forEach,for or for..of => iterate. map=> iterate and return data. reduce=> return single value array.reduce((a,b)=>a+b,initalValue)
+25. Math.random() give positive number in decimal below 1. "Math.random() - 0.5" you will get random +- values
+26. new Map([["hello",1],["object",{"hello":1}]]) = do not use map[key] = 2 it loses all characteristics. use Object.entries(obj) for the input to maps. use Object.fromEntries([["hello",1],["object,{"hello":1}]]) to get object format. sequence maintained ,key can be object
+27. destructure let {prop : varName = default, ...rest} = object and let [item1 = default, item2, ...rest] = array . When used inside a function({prop:value=default,prop2:val1}={}) this way when calling the function we can pass without parameters
+28. 
