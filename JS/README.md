@@ -7,14 +7,15 @@ link - https://javascript.info/
 4. alert(has ok button), prompt(has input box and default value return input value) and confirm(has ok/cancel and returns boolean) as popups
 5. "%" gives remainder,"**" gives exponential. string conversions=> "4"+1=41, 2+2+"1"=41, "6"/"2"=3, +"123"=123(same as Number("123")), +"1" => 1, modify in place n=2; **n+= 5** ;n=>7.  "4" - 2 => 2
 1. increments for numbers
-      ```javascript
-      let counter = 1;
-      let a = ++counter;//a=2,counter=2
-      let b = counter++;//b=2,counter=3
-      ```
+    ```javascript
+    let counter = 1;
+    let a = ++counter;//a=2,counter=2
+    let b = counter++;//b=2,counter=3
+    ```
 1. ?? nullish coalescing check for undefined
 6. "," will ignore .according to BDMAS precedence
-7. ||(OR either true => true) first true and stops returns true(that values), &&(AND both are true => true) first false(that value) and stops return false, precedence && higher the ||
+7. ||(OR either true => true) first true and stops returns true(that values), &&(AND both are true => true) first false(that value) and stops return false, precedence && higher the || - redo this section questions https://javascript.info/logical-operators
+1. ?? used to find the undefined and null values as false. a ?? b simpler form is (a !== null && a !== undefined) ? a : b;
 8. break/continue not work with ?, for(;;){} ";" are necessary. label to break outer loops
     ```javascript
     "outer: for(;;;){break outer;}"
@@ -85,4 +86,5 @@ link - https://javascript.info/
 25. Math.random() give positive number in decimal below 1. "Math.random() - 0.5" you will get random +- values
 26. new Map([["hello",1],["object",{"hello":1}]]) = do not use map[key] = 2 it loses all characteristics. use Object.entries(obj) for the input to maps. use Object.fromEntries([["hello",1],["object,{"hello":1}]]) to get object format. sequence maintained ,key can be object
 27. destructure let {prop : varName = default, ...rest} = object and let [item1 = default, item2, ...rest] = array . When used inside a function({prop:value=default,prop2:val1}={}) this way when calling the function we can pass without parameters
-28. 
+28. rest function(a,b,...c) c will have array of remaining arguments. spread convert array to arguments Math.max(...test1,...test2)
+29. The spread syntax works only with iterables.
