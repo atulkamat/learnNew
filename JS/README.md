@@ -88,10 +88,10 @@ link - https://javascript.info/
 27. destructure let {prop : varName = default, ...rest} = object and let [item1 = default, item2, ...rest] = array . When used inside a function({prop:value=default,prop2:val1}={}) this way when calling the function we can pass without parameters
 28. rest function(a,b,...c) c will have array of remaining arguments. spread convert array to arguments Math.max(...test1,...test2)
 29. The spread syntax works only with iterables.
-03. Lexical environment concepts and closure concepts
+30. Lexical environment concepts and closure concepts
 31. length on function gives the arguments. name on function gives the function name
 function test (a,b){};test.length = > 2
-32. declare the funcito name so it can be used inside the function
+32. declare the function name so it can be used inside the function. can be used
     ```javascript
       let sayHi = function func(who) {
         if (who) {
@@ -104,4 +104,5 @@ function test (a,b){};test.length = > 2
       sayHi = null;
       welcome(); // Hello, Guest (nested call works)
     ```
-33. 
+33. prototypal - get set what is the difference - does it change if we don't give it
+34. 
