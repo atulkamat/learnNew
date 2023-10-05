@@ -1,0 +1,10 @@
+order_ID,category,onTime,delayed,noData
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4832,BS,1,0,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4832,FP,0,1,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4832,PA,0,0,1
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4833,BS,1,1,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4833,FP,1,1,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4833,PA,0,0,1
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4834,BS,1,1,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4835,FP,0,1,0
+0047f1c4-1c5b-48d3-bb84-f9bc2f6f4836,PA,0,1,0

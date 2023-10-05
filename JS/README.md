@@ -2,7 +2,11 @@
 link - https://javascript.info/
 1. "const" does not allow changes."let" allows changes. variable definition with only $ and _ is possible
 2. all caps for "const" variable with know values, camelcase for constants which fill from a function on run time
-3. Special values:  number values(NaN, Infinity,-Infinity). String (`hello ${name} !`)=> Hello World!. null=>non existent,undefined=>not defined
+3. Special values:  number values(NaN, Infinity,-Infinity).null=>non existent,undefined=>not defined
+```javascript
+const name = "World";
+`hello ${name} !`//Hello World!
+```
 3. not recommended assign variable with undefined
 4. alert(has ok button), prompt(has input box and default value return input value) and confirm(has ok/cancel and returns boolean) as popups
 5. "%" gives remainder,"**" gives exponential. string conversions=> "4"+1=41, 2+2+"1"=41, "6"/"2"=3, +"123"=123(same as Number("123")), +"1" => 1, modify in place n=2; **n+= 5** ;n=>7.  "4" - 2 => 2
@@ -105,4 +109,4 @@ function test (a,b){};test.length = > 2
       welcome(); // Hello, Guest (nested call works)
     ```
 33. prototypal - get set what is the difference - does it change if we don't give it
-34. 
+34. class to create an object with constructor and functions at "new" creation
