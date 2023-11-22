@@ -109,4 +109,134 @@ function test (a,b){};test.length = > 2
       welcome(); // Hello, Guest (nested call works)
     ```
 33. prototypal - get set what is the difference - does it change if we don't give it
+
+Class
 34. class to create an object with constructor and functions at "new" creation
+34. class on demand
+    ```javascript
+    function makeClass(phrase) {
+      // declare a class and return it
+      return class {
+        sayHi() {
+          alert(phrase);
+        }
+      };
+    }
+    // Create a new class
+    let User = makeClass("Hello");
+    new User().sayHi(); 
+    ```
+35. overwrite constructor and methods using the super.in constructor make sure super(...props) runs first else the "this" is not created
+36. 
+
+# Clean Code principle
+class name ->noun, function name -> verbs
+```javascript
+locationTypeValidator.validateAddress(taxRequest.getAddress())
+```
+# SOLID principles
+## Single Responsibility
+a object should do only one thing as the name of the function suggests
+bad example
+```javascript
+class Employee {
+  calculatePay(salary){
+    //logic to save data related to employee
+  }
+  save(employee){}
+}
+```
+good example
+```javascript
+class Employee {
+  calculatePay(salary){}
+}
+class EmployeeRepository{
+  save(employee){
+    //logic to save data on employee
+  }
+}
+```
+## Open-Closed
+not open for modification, only extend
+bad example
+```javascript
+class calculatePay{
+  switch (employee.type) {
+    case "hourly"://keep adding in future more code and handle all actions
+        return calculateHourly(employee)
+        break;
+    default:
+        break;
+  }
+}
+```
+good example
+```javascript
+class PaidEmployee {
+  calculatePay(employee){}//no need to change code here
+}
+class PerHourEmployee extends PaidEmployee{
+  calculatePay(employee){}//no need to change code here as well
+}
+```
+##  Liskov substitute & Interface segregation principle
+subtype must be substitutable
+entity should not be forced to depend on methods not used by them
+good example for L
+```javascript
+class Bird{}
+class FlyingBird extends Bird{
+  fly(){}
+}
+class Pigeon extends FlyingBird{}
+class Penguin extends Bird{}
+```
+bad example for I using TS
+```typescript
+interface BearKeeper{
+  wasTheBear():void
+  feedTheBear():Void
+  putHandInMouth():Void //not something sane person does
+  //have
+}
+```
+good example for I using TS
+```typescript
+interface BearCleaner {
+    washTheBear(): void
+}
+interface BearFeeder {
+    feedTheBear(): void
+}
+interface BearMouth {
+    putHandInMouth(): void
+}
+class BearCarer implements BearCleaner, BearFeeder {
+    washTheBear() {}
+    feedTheBear() {}
+}
+class CrazyPerson implements BearMouth {
+    putHandInMouth() {} // good luck with that!
+}
+```
+not easy to show as js has no interface use ts
+
+## dependency inversion or dependency injection
+pass the dependency as a parameter so that it is easier to test/replace etc
+bad code
+```typescript
+calculateSalariedPay(employee: Employee) {
+    return new TaxCalculator().calculateIncomeTax(employee)
+}
+```
+good code
+```typescript
+calculateSalariedPay(employee: Employee, taxCalculator: AbstractCalculator) {
+    return taxCalculator.calculateTax(employee);
+}
+```
+
+
+ACID - Atomicity,consistency,Isolation,Durability  -  persistence db
+ORM - Object relational Mapping
