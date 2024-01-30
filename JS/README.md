@@ -1,6 +1,6 @@
 #js coding rules
 link - https://javascript.info/
-1. "const" does not allow changes."let" allows changes. variable definition with only $ and _ is possible
+1. "const" does not allow changes."let" allows changes. variable definition with only $ and _ is possible. start with # will mean private
 2. all caps for "const" variable with know values, camelcase for constants which fill from a function on run time
 3. Special values:  number values(NaN, Infinity,-Infinity).null=>non existent,undefined=>not defined
 ```javascript
@@ -9,7 +9,7 @@ const name = "World";
 ```
 3. not recommended assign variable with undefined
 4. alert(has ok button), prompt(has input box and default value return input value) and confirm(has ok/cancel and returns boolean) as popups
-5. "%" gives remainder,"**" gives exponential. string conversions=> "4"+1=41, 2+2+"1"=41, "6"/"2"=3, +"123"=123(same as Number("123")), +"1" => 1, modify in place n=2; **n+= 5** ;n=>7.  "4" - 2 => 2
+5. "%" gives remainder,"**" gives exponential. string conversions=> "4"+1=41, 2+2+"1"=41, "6"/"2"=3, +"123"=123(same as Number("123")), +"1" => 1, "4" - 2 => 2, modify in place n=2; **n+= 5** ;n=>7.  
 1. increments for numbers
     ```javascript
     let counter = 1;

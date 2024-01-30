@@ -5,3 +5,4 @@
 1. usage $test
 1. use export to set the values in the nano .bashrc file
 1. [[]] single executables
+1. chmod +x PR_create.sh for allowing to be executed
